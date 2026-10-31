@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rider Service - Nunca viajes solo</title>
+    <meta name="description" content="Asistencia, comunidad y soporte para motociclistas. Descargá la app Rider Service para Android.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-custom-dark text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-black">
+
+    <header class="sticky top-0 z-50 bg-[#0b0f17]/95 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-xl font-black tracking-wider text-white">RIDER <span class="text-accent-yellow">SERVICE</span></span>
+                <span class="text-[9px] tracking-widest text-slate-400 font-semibold uppercase">Nunca viajes solo</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#inicio" class="transition-colors">Inicio</a>
+                <a href="#soluciones" class="transition-colors">Soluciones</a>
+                <a href="#descarga" class="transition-colors">Descarga</a>
+                <a href="#mecanicos" class="transition-colors">Para mecánicos</a>
+                <a href="#legal" class="transition-colors">Legal</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="#" data-apk download class="hidden sm:inline-block bg-accent-yellow hover:bg-amber-400 text-black text-sm font-bold px-6 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/10">Descargar APK</a>
+                <button id="menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="menu-movil" class="hidden md:hidden border-t border-slate-800 bg-[#0b0f17] px-6 py-4 text-slate-300 font-medium">
+            <a href="#inicio" class="block py-3 hover:text-accent-yellow">Inicio</a>
+            <a href="#soluciones" class="block py-3 hover:text-accent-yellow">Soluciones</a>
+            <a href="#descarga" class="block py-3 hover:text-accent-yellow">Descarga</a>
+            <a href="#mecanicos" class="block py-3 hover:text-accent-yellow">Para mecánicos</a>
+            <a href="#legal" class="block py-3 hover:text-accent-yellow">Legal</a>
+            <a href="#" data-apk download class="block mt-3 bg-accent-yellow text-black text-center font-bold px-6 py-3 rounded-xl">Descargar APK</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative overflow-hidden pt-20 pb-28 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#0b0f17] to-[#0b0f17]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-bold text-accent-yellow">
+                    Proyecto Académico - Universidad Nacional de Pilar
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tight text-white leading-none">
+                    Tu asistencia vial, a un <span class="text-accent-yellow">solo toque</span>.
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed max-w-xl">
+                    La app que conecta a motociclistas con mecánicos cercanos. Asistencia, comunidad y soporte siempre que lo necesites.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="#" data-apk download class="bg-accent-yellow hover:bg-amber-400 text-black font-extrabold px-8 py-4 rounded-xl text-center transition-all shadow-xl shadow-amber-500/20">Descargar APK para Android</a>
+                    <a href="#descarga" class="border border-slate-700 hover:border-slate-500 text-slate-200 font-bold px-8 py-4 rounded-xl text-center transition-all">Cómo instalar</a>
+                </div>
+                <div class="flex flex-wrap items-center gap-x-6 gap-y-1 text-xs text-slate-500">
+                    <span>Requisitos: Android 10 o superior</span>
+                    <span>Versión de prueba 1.0</span>
+                    <span>APK de 00 MB</span>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-[270px] rounded-[2.6rem] border-[6px] border-slate-800 bg-black overflow-hidden shadow-2xl shadow-amber-500/10">
+                    <img src="assets/4b897b56-35cc-4f1f-b8a4-2636f997c243.jpg" alt="Pantalla de inicio de la app Rider Service" class="block w-full h-auto" width="447" height="832">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="soluciones" class="py-24 bg-[#0b0f17]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl font-black tracking-tight text-white">Pensada para cuando te quedás en la ruta</h2>
+                <p class="text-slate-400 text-base">Todo lo que necesitás para pedir ayuda y encontrar quién te la pueda dar.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl space-y-4 hover:border-accent-yellow/50 transition-all">
+                    <div class="w-12 h-12 bg-accent-yellow/10 rounded-xl flex items-center justify-center text-accent-yellow font-bold text-lg">01</div>
+                    <h3 class="text-xl font-bold text-white">Mecánicos cerca tuyo</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Mirá en el mapa los talleres y mecánicos de tu zona para ahorrar tiempo cuando necesitás ayuda.</p>
+                </div>
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl space-y-4 hover:border-accent-yellow/50 transition-all">
+                    <div class="w-12 h-12 bg-accent-yellow/10 rounded-xl flex items-center justify-center text-accent-yellow font-bold text-lg">02</div>
+                    <h3 class="text-xl font-bold text-white">Solicitudes de asistencia</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pedí ayuda en cuatro pasos y seguí el estado de cada solicitud desde la app.</p>
+                </div>
+                <div class="bg-slate-900/40 border border-slate-800/80 p-8 rounded-2xl space-y-4 hover:border-accent-yellow/50 transition-all">
+                    <div class="w-12 h-12 bg-accent-yellow/10 rounded-xl flex items-center justify-center text-accent-yellow font-bold text-lg">03</div>
+                    <h3 class="text-xl font-bold text-white">Comunidad Rider Service</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Un espacio para que motociclistas y mecánicos se apoyen entre sí.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descarga" class="py-24 bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-black tracking-tight text-white max-w-2xl">Instalala en tu Android en un minuto</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="space-y-3"><div class="w-10 h-10 rounded-full bg-accent-yellow text-black font-black flex items-center justify-center">1</div><h3 class="text-lg font-bold text-white">Descargá la APK</h3><p class="text-slate-400 text-sm leading-relaxed">Tocá el botón de descarga. Si el navegador avisa que el archivo puede ser dañino, elegí “Descargar de todos modos”.</p></div>
+                <div class="space-y-3"><div class="w-10 h-10 rounded-full bg-accent-yellow text-black font-black flex items-center justify-center">2</div><h3 class="text-lg font-bold text-white">Permití la instalación</h3><p class="text-slate-400 text-sm leading-relaxed">Al abrir el archivo, Android te pide permiso para instalar desde este navegador. Activalo.</p></div>
+                <div class="space-y-3"><div class="w-10 h-10 rounded-full bg-accent-yellow text-black font-black flex items-center justify-center">3</div><h3 class="text-lg font-bold text-white">Abrí Rider Service</h3><p class="text-slate-400 text-sm leading-relaxed">Tocá Instalar. Si Play Protect avisa, elegí “Instalar de todos modos”.</p></div>
+            </div>
+            <p class="mt-10 max-w-2xl border-l-4 border-accent-yellow bg-slate-900/80 rounded-r-xl px-5 py-4 text-sm text-slate-400">Rider Service es un proyecto universitario y todavía no está en Google Play. Por eso Android muestra estos avisos: son normales en cualquier app que se instala fuera de la tienda. Es una versión de prueba y por ahora no hay un servicio de asistencia real.</p>
+            <a href="#" data-apk download class="inline-block mt-8 bg-accent-yellow hover:bg-amber-400 text-black font-extrabold px-8 py-4 rounded-xl transition-all">Descargar APK</a>
+        </div>
+    </section>
+
+    <section id="mecanicos" class="py-24 bg-[#0b0f17]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap items-center justify-between gap-8 bg-slate-900/60 border border-slate-800 rounded-3xl p-10 md:p-14">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-4xl font-black tracking-tight text-white">¿Sos mecánico?</h2>
+                    <p class="text-slate-400 mt-3">Registrate en la app como mecánico y recibí solicitudes de motociclistas que necesitan ayuda cerca de tu taller.</p>
+                </div>
+                <a href="#" data-apk download class="bg-accent-yellow hover:bg-amber-400 text-black font-extrabold px-8 py-4 rounded-xl transition-all">Descargar y registrarme</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="legal" class="bg-slate-900 border-t border-slate-800 py-16">
+        <div class="max-w-7xl mx-auto px-6 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
+                <div class="space-y-3 md:col-span-1">
+                    <span class="font-black text-white tracking-wider">RIDER <span class="text-accent-yellow">SERVICE</span></span>
+                    <p class="text-slate-500 text-xs leading-relaxed">Desarrollado en el marco de la cursada de Aplicaciones Móviles en la Universidad Nacional de Pilar.</p>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-semibold text-slate-300">Marco Legal</h4>
+                    <ul class="space-y-2 text-slate-400 text-xs">
+                        <li><button type="button" data-open="terminos" class="hover:text-accent-yellow transition-colors text-left">Términos y Condiciones</button></li>
+                        <li><button type="button" data-open="privacidad" class="hover:text-accent-yellow transition-colors text-left">Política de Privacidad</button></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-semibold text-slate-300">Contacto y desarrollo</h4>
+                    <ul class="space-y-2 text-slate-400 text-xs">
+                        <li><a href="#" data-mail class="hover:text-accent-yellow transition-colors"></a></li>
+                        <li><a href="https://github.com/lightbblue/driver-service" target="_blank" rel="noopener" class="hover:text-accent-yellow transition-colors">Repositorio en GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h4 class="font-semibold text-slate-300">Institución</h4>
+                    <p class="text-slate-500 text-xs">Universidad Nacional de Pilar (UNPilar) - Pilar, Buenos Aires, Argentina.</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Equipo Rider Service. Software bajo licencia MIT.</p>
+                <p class="mt-4 sm:mt-0">Proyecto con fines académicos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="terminos" aria-labelledby="t-terminos"><div class="overflow-y-auto max-h-[85vh] p-8 legal">
+        <div class="flex items-start justify-between gap-4"><h2 id="t-terminos" class="text-2xl font-black text-white">Términos y Condiciones</h2><button type="button" data-close class="text-slate-400 hover:text-white text-2xl leading-none" aria-label="Cerrar">&times;</button></div>
+        <p class="text-slate-500 mt-1">Última actualización: 31 de octubre de 2026</p>
+        <h3>1. Qué es Rider Service</h3>
+        <p>Rider Service es una aplicación móvil desarrollada por estudiantes de la Universidad Nacional de Pilar (UNPilar) en el marco de la materia Aplicaciones Móviles. Es un software en fase de desarrollo, con fines académicos.</p>
+        <h3>2. Sin garantías de servicio</h3>
+        <p>La app se ofrece “tal como está”. No garantizamos disponibilidad permanente (24/7), ausencia de errores ni que el servicio continúe sin cambios. Podemos modificarlo o dejar de ofrecerlo en cualquier momento.</p>
+        <h3>3. Asistencia y rutas</h3>
+        <p>Los mecánicos son personas o talleres independientes. No garantizamos que haya uno disponible, ni sus tiempos de respuesta, ni la calidad o el precio de su trabajo. La ubicación y las rutas que muestra la app son orientativas.</p>
+        <p>En la medida que la ley lo permita, el equipo de estudiantes no se responsabiliza por daños derivados de fallos del servicio de asistencia, demoras, errores de ubicación o de rutas.</p>
+        <h3>4. Emergencias</h3>
+        <p>Rider Service no reemplaza a los servicios de emergencia. Si tu vida o tu seguridad están en riesgo, llamá al 911.</p>
+        <h3>5. Uso adecuado</h3>
+        <p>Te comprometés a cargar datos verdaderos y a no usar la app con fines ilícitos ni para molestar a otras personas.</p>
+        <h3>6. Propiedad intelectual y licencia</h3>
+        <p>El software pertenece al equipo de desarrollo de la materia Aplicaciones Móviles de la UNPilar. El código fuente está publicado en GitHub bajo licencia MIT.</p>
+        <h3>7. Ley aplicable</h3>
+        <p>Estos términos se rigen por las leyes de la República Argentina.</p>
+    </div></dialog>
+
+    <dialog id="privacidad" aria-labelledby="t-privacidad"><div class="overflow-y-auto max-h-[85vh] p-8 legal">
+        <div class="flex items-start justify-between gap-4"><h2 id="t-privacidad" class="text-2xl font-black text-white">Política de Privacidad</h2><button type="button" data-close class="text-slate-400 hover:text-white text-2xl leading-none" aria-label="Cerrar">&times;</button></div>
+        <p class="text-slate-500 mt-1">Última actualización: 31 de octubre de 2026</p>
+        <h3>Responsable</h3>
+        <p>El equipo de desarrollo de Rider Service (estudiantes de la UNPilar). Contacto: <a href="#" data-mail></a>.</p>
+        <h3>Qué datos recolectamos</h3>
+        <ul>
+            <li>Datos de tu cuenta: nombre, correo electrónico, contraseña y tipo de cuenta (usuario o mecánico).</li>
+            <li>Ubicación del dispositivo, solo si das permiso, al usar el mapa o pedir asistencia.</li>
+            <li>Datos de las solicitudes que cargues y, si sos mecánico, los datos de tu taller.</li>
+        </ul>
+        <h3>Para qué los usamos</h3>
+        <p>Para crear tu cuenta, mostrarte mecánicos cercanos y conectar tu solicitud con un mecánico. No usamos tus datos para publicidad ni los vendemos.</p>
+        <h3>Con quién los compartimos</h3>
+        <ul>
+            <li>Con el mecánico al que le enviás una solicitud, solo los datos necesarios para atenderla.</li>
+            <li>Con Supabase, proveedor que aloja la base de datos y la autenticación de la app.</li>
+        </ul>
+        <p>No los compartimos con ningún otro tercero.</p>
+        <h3>Ubicación</h3>
+        <p>La app te pide permiso antes de usar tu ubicación. Podés retirarlo cuando quieras desde los ajustes del teléfono; sin ubicación, el mapa no puede mostrarte mecánicos cerca tuyo.</p>
+        <h3>Cuánto tiempo los conservamos</h3>
+        <p>Mientras tengas tu cuenta y dure el proyecto. Los eliminamos cuando lo pidas o cuando el proyecto finalice.</p>
+        <h3>Seguridad</h3>
+        <p>Usamos medidas razonables para proteger tus datos, pero ningún sistema es completamente seguro.</p>
+        <h3>Tus derechos</h3>
+        <p>Podés pedir el acceso, la rectificación, la actualización y la supresión de tus datos escribiendo a <a href="#" data-mail></a>. El acceso es gratuito a intervalos no inferiores a seis meses. Respondemos los pedidos de acceso en 10 días corridos y los de rectificación o supresión en 5 días hábiles.</p>
+        <p>La Agencia de Acceso a la Información Pública, en su carácter de Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.</p>
+        <h3>Menores de edad</h3>
+        <p>La app no está dirigida a menores de 18 años.</p>
+        <h3>Esta página web y las cookies</h3>
+        <p>Esta página no usa cookies ni herramientas de análisis. Para verse correctamente carga una librería de estilos desde jsDelivr, un servicio de distribución de contenido que puede registrar tu dirección IP. El botón de descarga te lleva a GitHub, que tiene su propia política de privacidad.</p>
+        <h3>Cambios</h3>
+        <p>Si cambiamos esta política, publicaremos la nueva versión acá con su fecha.</p>
+    </div></dialog>
+
+    <script>
+        // Link directo a la APK (por ejemplo, un GitHub Release).
+        var APK_URL = "https://github.com/lightbblue/driver-service/releases/latest/download/rider-service.apk";
+        // Correo de contacto del equipo: reemplazalo por el real.
+        var CONTACT_EMAIL = "equipo@ejemplo.edu.ar";
+        document.querySelectorAll("[data-apk]").forEach(function (a) { a.href = APK_URL; });
+        document.querySelectorAll("[data-mail]").forEach(function (a) { a.href = "mailto:" + CONTACT_EMAIL; a.textContent = CONTACT_EMAIL; });
+        var menuBtn = document.getElementById("menu-btn"), menu = document.getElementById("menu-movil");
+        function toggleMenu(open) {
+            menu.classList.toggle("hidden", !open);
+            menuBtn.setAttribute("aria-expanded", open);
+            menuBtn.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        }
+        menuBtn.addEventListener("click", function () { toggleMenu(menu.classList.contains("hidden")); });
+        menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { toggleMenu(false); }); });
+        document.querySelectorAll("[data-open]").forEach(function (b) {
+            b.addEventListener("click", function () { document.getElementById(b.dataset.open).showModal(); });
+        });
+        document.querySelectorAll("dialog").forEach(function (d) {
+            d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+            d.querySelectorAll("[data-close]").forEach(function (x) { x.addEventListener("click", function () { d.close(); }); });
+        });
+    </script>
+</body>
+</html>
+

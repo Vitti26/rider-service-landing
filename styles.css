@@ -1,0 +1,73 @@
+/* Estilos personalizados para Rider Service */
+.bg-custom-dark { 
+    background-color: #0b0f17; 
+}
+
+.text-accent-yellow { 
+    color: #ffb800; 
+}
+
+.bg-accent-yellow { 
+    background-color: #ffb800; 
+}
+
+.border-accent-yellow { 
+    border-color: #ffb800; 
+}
+
+nav a:hover { 
+    color: #ffb800 !important; 
+}
+
+html { 
+    scroll-padding-top: 90px; 
+}
+
+:focus-visible { 
+    outline: 3px solid #ffb800; 
+    outline-offset: 3px; 
+}
+
+dialog { 
+    margin: auto; 
+    padding: 0; 
+    width: 92vw; 
+    max-width: 42rem; 
+    max-height: 85vh; 
+    background: #0f1523; 
+    color: #e2e8f0; 
+    border: 1px solid #1e293b; 
+    border-radius: 1rem; 
+}
+
+dialog::backdrop { 
+    background: rgba(0, 0, 0, 0.75); 
+}
+
+.legal h3 { 
+    color: #ffb800; 
+    font-weight: 700; 
+    margin: 1.25rem 0 0.35rem; 
+}
+
+.legal p, 
+.legal li { 
+    color: #cbd5e1; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+}
+
+.legal p + p { 
+    margin-top: 0.5rem; 
+}
+
+.legal ul { 
+    list-style: disc; 
+    padding-left: 1.25rem; 
+}
+
+.legal a { 
+    color: #ffb800; 
+    text-decoration: underline; 
+}
+
