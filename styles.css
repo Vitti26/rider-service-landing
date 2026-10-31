@@ -38,10 +38,33 @@ dialog {
     color: #e2e8f0; 
     border: 1px solid #1e293b; 
     border-radius: 1rem; 
+    overflow: hidden; 
 }
 
 dialog::backdrop { 
     background: rgba(0, 0, 0, 0.75); 
+}
+
+.legal {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #0f1523;
+}
+
+.legal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.legal::-webkit-scrollbar-track {
+    background: #0f1523;
+}
+
+.legal::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+.legal::-webkit-scrollbar-thumb:hover {
+    background: #ffb800;
 }
 
 .legal h3 { 
@@ -70,4 +93,3 @@ dialog::backdrop {
     color: #ffb800; 
     text-decoration: underline; 
 }
-
