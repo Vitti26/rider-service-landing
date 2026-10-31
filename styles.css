@@ -34,11 +34,15 @@ dialog {
     width: 92vw; 
     max-width: 42rem; 
     max-height: 85vh; 
+    overflow: hidden; 
     background: #0f1523; 
     color: #e2e8f0; 
     border: 1px solid #1e293b; 
     border-radius: 1rem; 
-    overflow: hidden; 
+}
+
+dialog > div { 
+    max-height: calc(85vh - 2px); 
 }
 
 dialog::backdrop { 
