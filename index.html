@@ -7,6 +7,8 @@
     <meta name="description" content="Asistencia, comunidad y soporte para motociclistas. Descargá la app Rider Service para Android.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 21 5.5V12c0 5-4 8.5-9 10-5-1.5-9-5-9-10V5.5Z' fill='%23ffb800'/%3E%3C/svg%3E">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -45,9 +47,6 @@
     <section id="inicio" class="relative overflow-hidden pt-20 pb-28 border-b border-slate-900 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#0b0f17] to-[#0b0f17]">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 space-y-8">
-                <div class="inline-flex items-center bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full text-xs font-bold text-accent-yellow">
-                    Proyecto Académico - Universidad Nacional de Pilar
-                </div>
                 <h1 class="text-5xl md:text-7xl font-black tracking-tight text-white leading-none">
                     Tu asistencia vial, a un <span class="text-accent-yellow">solo toque</span>.
                 </h1>
@@ -61,13 +60,12 @@
                 <div class="flex flex-wrap items-center gap-x-6 gap-y-1 text-xs text-slate-500">
                     <span>Requisitos: Android 10 o superior</span>
                     <span>Versión de prueba 1.0</span>
-                    <span>APK de 00 MB</span>
                 </div>
             </div>
 
             <div class="lg:col-span-5 flex justify-center">
                 <div class="relative w-[270px] rounded-[2.6rem] border-[6px] border-slate-800 bg-black overflow-hidden shadow-2xl shadow-amber-500/10">
-                    <img src="assets/4b897b56-35cc-4f1f-b8a4-2636f997c243.jpg" alt="Pantalla de inicio de la app Rider Service" class="block w-full h-auto" width="447" height="832">
+                    <img src="assets/appHome.jpg" alt="Pantalla de inicio de la app Rider Service" class="block w-full h-auto" width="447" height="832">
                 </div>
             </div>
         </div>
@@ -214,11 +212,16 @@
     </div></dialog>
 
     <script>
-        // Link directo a la APK (por ejemplo, un GitHub Release).
-        var APK_URL = "https://github.com/lightbblue/driver-service/releases/latest/download/rider-service.apk";
+        var APK_URL = ""; // pegá acá el link directo cuando tengas la APK
+        document.querySelectorAll("[data-apk]").forEach(function (a) {
+            if (APK_URL) { a.href = APK_URL; return; }
+            a.removeAttribute("href"); a.removeAttribute("download");
+            a.setAttribute("aria-disabled", "true");
+            a.textContent = "Próximamente";
+            a.style.opacity = ".6"; a.style.pointerEvents = "none";
+        });
         // Correo de contacto del equipo: reemplazalo por el real.
-        var CONTACT_EMAIL = "equipo@ejemplo.edu.ar";
-        document.querySelectorAll("[data-apk]").forEach(function (a) { a.href = APK_URL; });
+        var CONTACT_EMAIL = "jstachioni@gmail.com";
         document.querySelectorAll("[data-mail]").forEach(function (a) { a.href = "mailto:" + CONTACT_EMAIL; a.textContent = CONTACT_EMAIL; });
         var menuBtn = document.getElementById("menu-btn"), menu = document.getElementById("menu-movil");
         function toggleMenu(open) {
@@ -238,4 +241,3 @@
     </script>
 </body>
 </html>
-
